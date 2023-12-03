@@ -104,7 +104,7 @@ export const ComponentTree = ({ items }: { items: Item[] }) => {
   );
 
   return (
-    <Boundary animateRerendering={false} labels={['Component Tree']}>
+    <Boundary>
       <div className="space-y-6">
         <div className="flex">
           <div className="flex-1">
