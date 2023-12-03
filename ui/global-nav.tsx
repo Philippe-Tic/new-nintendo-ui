@@ -1,13 +1,11 @@
 'use client';
 
-import { demos, type Item } from '#/lib/demos';
-import { NextLogo } from '#/ui/next-logo';
-import Link from 'next/link';
-import { useSelectedLayoutSegment } from 'next/navigation';
+import { routes, type Item } from '#/lib/routes';
 import { MenuAlt2Icon, XIcon } from '@heroicons/react/solid';
 import clsx from 'clsx';
+import Link from 'next/link';
+import { useSelectedLayoutSegment } from 'next/navigation';
 import { useState } from 'react';
-import Byline from './byline';
 
 export function GlobalNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,12 +19,8 @@ export function GlobalNav() {
           className="group flex w-full items-center gap-x-2.5"
           onClick={close}
         >
-          <div className="h-7 w-7 rounded-full border border-white/30 group-hover:border-white/50">
-            <NextLogo />
-          </div>
-
           <h3 className="font-semibold tracking-wide text-gray-400 group-hover:text-gray-50">
-            App Router
+            New Nintendo UI
           </h3>
         </Link>
       </div>
@@ -51,8 +45,8 @@ export function GlobalNav() {
           hidden: !isOpen,
         })}
       >
-        <nav className="space-y-6 px-2 pb-24 pt-5">
-          {demos.map((section) => {
+        <nav className="space-y-6 px-2 pt-5">
+          {routes.map((section) => {
             return (
               <div key={section.name}>
                 <div className="mb-2 px-3 text-xs font-semibold uppercase tracking-wider text-gray-400/80">
@@ -68,7 +62,6 @@ export function GlobalNav() {
             );
           })}
         </nav>
-        <Byline className="absolute hidden sm:block" />
       </div>
     </div>
   );
