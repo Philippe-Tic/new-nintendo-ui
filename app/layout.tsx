@@ -5,15 +5,13 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Next.js App Router',
-    template: '%s | Next.js App Router',
+    default: 'MMI TP 23/24',
+    template: '',
   },
-  description:
-    'A playground to explore new Next.js App Router features such as nested layouts, instant loading states, streaming, and component level data fetching.',
+  description: 'TP Nintendo UI',
   openGraph: {
-    title: 'Next.js App Router Playground',
-    description:
-      'A playground to explore new Next.js App Router features such as nested layouts, instant loading states, streaming, and component level data fetching.',
+    title: 'TP Nintendo UI',
+    description: 'TP Nintendo UI',
     images: [`/api/og?title=Next.js App Router`],
   },
   twitter: {
