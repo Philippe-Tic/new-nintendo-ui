@@ -5,7 +5,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
-    default: 'MMI TP 23/24',
+    default: 'MMI TP 24/25',
     template: '',
   },
   description: 'TP Nintendo UI',
