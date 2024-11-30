@@ -9,17 +9,10 @@ export default function Page() {
         dernier et que le prototype fonctionne correctement !
       </p>
       <p>
-        Merci de partager votre fichier Figma, ou de me l'envoyer accessible par
-        lien à l'adresse mail suivante avec votre nom prénom :
-        <a
-          className="ml-2"
-          href="mailto:me@philippechevreul.com?subject=Rendu Figma Nintendo [Nom Prénom]"
-        >
-          me@philippechevreul.com
-        </a>
+        Je vous fournirai un lien google drive où vous devrez déposer votre fichier .fig (pas de simple partage car les liens expirent rapidement.)
       </p>
       <p className="text-md font-bold text-white">
-        Vous avez jusqu'au 16 janvier au soir pour me l'envoyer (soit votre
+        Vous avez jusqu'au 14 janvier au soir pour me l'envoyer (soit votre
         dernier cours avec moi !)
       </p>
       <h1 className="mt-16 text-xl font-bold">Notation</h1>
